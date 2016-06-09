@@ -40,31 +40,46 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.menu_lines2 { width: 0.1%; height: 32px; padding: 0 0; background-image: url(img/menu_lines2.png);}
 }
 
-.content {position: relative; width: 90%; left: 0; right: 0; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3); background-color: #fff; }
+.content {position: relative; width: 90%; left: 0; right: 0; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3); background-color: #fff; padding: 0 0 20px 0; }
 
 .cont_table {display: table; width: 100%;
 	ul{display: table-row}
-	li{display: table-cell; vertical-align: top;}}
+	li{display: table-cell; position: relative; vertical-align: top;}
+	.left_cell {border-right: 1px #cadae8 solid; width:55%}
+}
 
-.cont_left { position: relative; width:100%}
+.cont_left { position: relative; width:100%;}
 
-.cont_right { position: relative; width: 90%; left: 0; right: 0; margin: auto;}
+.cont_right { position: relative; width: 100%; overflow-y: auto; overflow-x: hidden; padding: 0 25px 20px 25px;}
+
+.padding {padding:  0 25px;}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+  bottom: 0; margin: auto;
+  z-index: 101;}
 
 
 .line1 {height: 1px; background-color: #cadae8}
 
-.table1 {display: table; font-size: 16px; color: #333333; border-collapse: collapse; width: 100%;
+.table1 {display: table; width: 100%; font-size: 16px; color: #333333; border-collapse: collapse;
 	ul{display: table-row; background: url(img/table1_row.png) bottom repeat-x;
 	&:hover {background-color: #E1EFFA; background-image: none;}
 		&:hover .ic_block {display: block}
 	}
-	li{display: table-cell; position: relative; padding:8px 10px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
-	.thead li { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle; padding-top: 15px}
+	li{display: table-cell; position: relative; padding:10px 10px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
+	.thead { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle;
+		li {padding: 17px 10px;}
+		&:hover{background-color: #fff;}
+	}
+	.table_act {font-weight: bold; background-color: #E1EFFA; background-image: none;}
 }
 
-.table2 {@extend .table1; font-size: 13px;
-	li {padding: 4px 5px;}
-	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 4px 5px;}
+.table2 {@extend .table1; font-size: 13px; width: 100%;
+	li {padding: 6px 6px;}
+	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
 }
 
 .table_foot {border-left: 1px #cadae8 solid; border-right: 1px #cadae8 solid; border-bottom: 5px #2A6BA2 solid; padding: 12px 15px;}
@@ -74,7 +89,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 
 .ic_block {min-width: 85px; display: none}
-.ic_block_small {@extend .ic_block; min-width: 60px;}
+.ic_block_small {min-width: 60px;}
 
 .ic_edit {@extend .ic_all; float: left; background-image: url(img/icon_edit.svg); margin-right: 5px;}
 .ic_del {@extend .ic_all; float: right; background-image: url(img/icon_del.svg)}
@@ -86,15 +101,73 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 .form1 {font-size: 21px; padding: 25px 15px}
 
+.checkbox_big {width: 30px; height: 30px;}
 
 
 
 
 
 
+@media (max-width: 1350px) {
+	
+	.cont_table {display: table; width: 100%;
+	ul{display: table-row}
+	li{display: table-cell; position: relative; vertical-align: top;}
+	.left_cell {border-right: 1px #cadae8 solid; width:50%}
+}
+	
+	.table1 {display: table;
+	ul{display: table-row;}
+	li{display: table-cell; vertical-align: middle;}
+	
+}
+}
 
-@media (max-width: 1200px) {
+
+
+
+
+
+@media (max-width: 1250px) {
+	
+	.content { width: 100%; }
+}
     
     
+
+
+
+
+
+@media (max-width: 1080px) {
+	
+
+	
+	.cont_table {display: table; width: 100%;
+	ul{display: table-row}
+	li{display: block;}
+	.left_cell {border-right: 0 #fff solid; width: 100%;}
+	}
+	
+	.cont_left { position: relative; width:100%; padding: 0 25px;}
+
+.cont_right { position: relative; width: 100%; overflow-y: hidden; overflow-x: hidden; padding: 0 25px;}
+	
+	.sticky {
+  position: relative;
+  top: auto;
+  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+  bottom: auto; margin: auto;}
+	
+	
+	.table1 {display: table; width: 100%;
+	ul{display: table-row;}
+	li{display: table-cell;}
+	.thead li { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle; padding: 17px 10px}
+	.table_act {font-weight: bold; background-color: #E1EFFA; background-image: none;}
+}
+
+	
+	
 }
 
