@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+
+<meta charset="utf-8">
+
+<script src="js/jquery.min.js"></script>
+        
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="js/bootstrap.min.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+        
+        
+	</head>
+
+	<body>
+
+        <!-- Modal - add_org -->
+
+<div id="add_org" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title">Добавление организации</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+        <div class="formscont">
+            <p><input type="text" class="form-control form1" placeholder="Компания"></p>
+            <p><input type="text" class="form-control form1" placeholder="Краткое наименование"></p>
+            <p><input type="text" class="form-control form1" placeholder="Код организации в МинРАР"></p>
+                </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-success btn-lg" style="float:left;">Добавить</a><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- /Modal - add_org -->
+
+
+        <!-- Modal - edit_org -->
+
+<div id="edit_org" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title">Редактирование организации</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+        <div class="formscont">
+            <p><input type="text" class="form-control form1" placeholder="Компания"></p>
+            <p><input type="text" class="form-control form1" placeholder="Краткое наименование"></p>
+            <p><input type="text" class="form-control form1" placeholder="Код организации в МинРАР"></p>
+                </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-success btn-lg" style="float:left;">Редактировать</a><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- /Modal - edit_org -->
+
+        <!-- Modal - del_org -->
+
+<div id="del_org" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title note_er">Удаление организации</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+        <div class="formscont">
+            <h1>ООО «Альб-Фрейт-Компани»</h1>
+                </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-danger btn-lg" style="float:left;">Удалить</a><button type="button" class="btn-lg btn-default" data-dismiss="modal">Отменить</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- /Modal - del_org -->
+
+
+   <div class="content_all">
+
+   <div class="head">
+       <ul>
+   <li style="background-color:#fff; width:1px;"><div class="logo"><a href="#"><img src="css/img/logo.png"></a></div></li>
+   <li style="text-align:right"><div class="head_menu"><a href="#">ТЕКУЩИЕ ДАННЫЕ (НАВИГАЦИЯ)</a><a href="#">ИСТОРИЯ(АСКП/ЕГАИС)</a><a href="#">КЭШ АНАЛИЗАТОР</a><a href="#">ЗАВОДЫ</a><a href="#">АДМИНКА</a><a href="#">test999 [Выйти]</a></div></li>
+           </ul>
+   </div>
+
+        <nav>
+   <ul>
+   <li><a href="#" class="active-it">Организации и контроллеры</a></li><li class="menu_lines2"></li><li><a href="#">Анализ данных GPS/ГЛОНАСС</a></li><li class="menu_lines2"></li><li><a href="#">Анализ данных ЕГАИС</a></li><li class="menu_lines2"></li><li><a href="#">Роли и пользователи</a></li><li class="menu_lines2"></li><li><a href="#">Привязка учетных данных к АСКП</a></li>
+   </ul>
+   </nav>
+        
+        <div class="content">
+
+            <div class="cont_table">
+
+            <ul>
+
+            <li style="border-right: 1px #cadae8 solid;">
+
+                    <div class="cont_left">
+
+                        <div class="table1">
+                <ul class="thead">
+                    <li>№</li><li><h1>Организация</h1></li><li>Код организации</li><li style="text-align:center; width:1px;"><a href="" style="font-size:30px" data-toggle="modal" data-target="#add_org">+<div style="font-size:9px; margin-top:-5px">ДОБАВИТЬ<br>ОРГАНИЗАЦИЮ</div></a></li>
+                </ul>
+                <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="" data-toggle="modal" data-target="#del_org" class="ic_del"></a></div></li>
+                </ul>
+
+               
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+                            <ul>
+                    <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="#" class="ic_del" data-toggle="modal" data-target="#del_org"></a></div></li>
+                </ul>
+            </div>
+                        <div class="table_foot"><a href="" class="btn-lg btn-primary" data-toggle="modal" data-target="#add_org" style="margin-top:10px; display:inline-block">Добавить организацию</a>
+
+                            <br><br>
+                        </div>
+
+                        </div>
+
+            </li>
+
+                <li>
+                    
+                        <div class="cont_right">
+                        
+                        <h1 style="color:#2A6BA2; margin:23px 0 24px 0; text-align:center">ООО «Альб-Фрейт-Компани»</h1>
+                        <div class="line1"></div>
+
+                        <h2 style="color:#2A6BA2">Контроллеры</h2>
+
+                            <div class="table2">
+                <ul class="thead">
+                    <li>№</li><li>Гос.номер</li><li>IMEI-АСКП</li><li>IMEI-ЕГАИС</li><li style="text-align:center; width:1px;"></li>
+                </ul>
+                <ul>
+                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                                <ul>
+                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                                <ul>
+                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                
+            </div>
+
+           <div class="table_foot"><a href="" class="btn btn-primary">Добавить контроллер</a></div>
+
+                            <br>
+
+                             <h2 style="color:#2A6BA2">Счетчики - ав0318 07</h2>
+
+                            <div class="table2">
+                <ul class="thead">
+                    <li>№</li><li>Режим/Номер точки</li><li>№ счетчика</li><li>Дата установки</li><li style="text-align:center; width:1px;"></li>
+                </ul>
+                <ul>
+                    <li>БАКУС</li><li>In</li><li>175</li><li>2013/07/01 0:00:00</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                <ul>
+                    <li>БАКУС</li><li>In</li><li>175</li><li>2013/07/01 0:00:00</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                                <ul>
+                    <li>БАКУС</li><li>In</li><li>175</li><li>2013/07/01 0:00:00</li><li><div class="ic_block_small"><a href="#" class="ic_edit_small"></a><a href="#" class="ic_del_small"></a></div></li>
+                </ul>
+                
+            </div>
+
+           <div class="table_foot"><a href="" class="btn btn-primary">Добавить контроллер</a></div>
+
+                            <br>
+
+                        
+                            </div>
+
+                </li>
+
+                </ul>
+
+                </div>
+                      
+                    </div>
+
+                
+            </div>
+
+      
+
+       </div>
+    
+</body>
+
+</html>
