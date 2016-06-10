@@ -262,7 +262,7 @@ nav {
 
 .formscont div {
   margin: 0;
-  padding: 6px; }
+  padding: 7px; }
   .formscont div:hover {
     background-color: #E1EFFA; }
 .formscont p {
@@ -272,8 +272,10 @@ nav {
   font-size: 12px; }
 
 .form1 {
-  font-size: 21px;
-  padding: 20px 10px; }
+  font-size: 17px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px #cadae8 solid; }
 
 @media (max-width: 1350px) {
   .cont_table {
