@@ -256,13 +256,24 @@ nav {
   float: right;
   background-image: url(img/icon_del.svg); }
 
-.form1 {
-  font-size: 21px;
-  padding: 25px 15px; }
-
 .checkbox_big {
   width: 30px;
   height: 30px; }
+
+.formscont div {
+  margin: 0;
+  padding: 6px; }
+  .formscont div:hover {
+    background-color: #E1EFFA; }
+.formscont p {
+  margin: 0 0 2px 0;
+  color: #2D547D;
+  font-weight: bold;
+  font-size: 12px; }
+
+.form1 {
+  font-size: 21px;
+  padding: 20px 10px; }
 
 @media (max-width: 1350px) {
   .cont_table {
@@ -337,6 +348,9 @@ nav {
     .table1 .table_act, .table2 .table_act {
       font-weight: bold;
       background-color: #E1EFFA;
-      background-image: none; } }
+      background-image: none; }
+
+  .ic_block {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

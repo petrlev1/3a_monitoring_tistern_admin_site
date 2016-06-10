@@ -99,9 +99,16 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 .ic_edit_small {@extend .ic_all_small; float: left; background-image: url(img/icon_edit.svg); margin-right: 5px;}
 .ic_del_small {@extend .ic_all_small; float: right; background-image: url(img/icon_del.svg)}
 
-.form1 {font-size: 21px; padding: 25px 15px}
 
 .checkbox_big {width: 30px; height: 30px;}
+
+.formscont {
+	div {margin: 0; padding: 6px;
+	&:hover {background-color: #E1EFFA;}}
+	p{margin: 0 0 2px 0; color: #2D547D; font-weight: bold; font-size: 12px;}
+}
+.form1 {font-size: 21px; padding: 20px 10px}
+
 
 
 
@@ -131,6 +138,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 @media (max-width: 1250px) {
 	
 	.content { width: 100%; }
+	
 }
     
     
@@ -166,6 +174,8 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.thead li { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle; padding: 17px 10px}
 	.table_act {font-weight: bold; background-color: #E1EFFA; background-image: none;}
 }
+	
+	.ic_block {display: block}
 
 	
 	
