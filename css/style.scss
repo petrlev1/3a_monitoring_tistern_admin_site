@@ -30,14 +30,14 @@ h2 { font-size: 18px; font-weight: bold}
 h4 {font-size: 21px; margin: 0;}
 .note_er {color: #FF543F}
 
-nav { margin: 30px 0; clear: both; text-align: center;
+nav { margin: 30px 0; clear: both; text-align: center; font-size: 19px;
 background-image: url(img/menu_lines.png); background-position: center; background-repeat: repeat-x;
-	a { padding: 13px 0; color: #2D547D; font-weight: bold;}
+	a { padding: 13px 0; color: #2D547D;}
 	ul { width: 90%; display: table; left: 0; right: 0; margin: auto; padding: 0 0; list-style: none; background-color: #F2F2F2;}
-	li { display: table-cell; width: 20%; vertical-align: middle; margin: 0 10px; padding: 0 20px; list-style: none; text-align: left; vertical-align: middle;}
-    .active-it {color: black; font-weight: bold;}
+	li { display: table-cell; vertical-align: middle; margin: 0 10px; padding: 0 20px; list-style: none; text-align: left; vertical-align: middle;}
+    .active-it {color: black; font-weight: 100; font-weight: bold;}
 	
-	.menu_lines2 { width: 0.1%; height: 32px; padding: 0 0; background-image: url(img/menu_lines2.png);}
+	.menu_lines2 { width: 1px; height: 32px; padding: 0 0; border-right: 1px #c4ccd5 solid}
 }
 
 .content {position: relative; width: 90%; left: 0; right: 0; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3); background-color: #fff; padding: 0 0 20px 0; }
