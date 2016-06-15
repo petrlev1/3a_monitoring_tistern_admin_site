@@ -43,6 +43,12 @@ a {
   .logo img {
     width: 100%; }
 
+.logo_tit {
+  position: absolute;
+  top: 14px;
+  margin-left: 10px;
+  color: #fff; }
+
 .head_menu {
   position: relative;
   color: #fff;
@@ -140,20 +146,16 @@ nav {
 .cont_right {
   position: relative;
   width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 0 25px 20px 25px; }
 
 .padding {
   padding: 0 25px; }
 
 .sticky {
-  position: fixed;
-  top: 0px;
-  /* ╨╡╤Б╨╗╨╕ ╨╜╨╛╨╗╤М ╨╖╨░╨╝╨╡╨╜╨╕╤В╤М ╨╜╨░ ╤З╨╕╤Б╨╗╨╛ (╨╕ ╨▓ ╤Б╨║╤А╨╕╨┐╤В╨╡ ╤В╨╛╨╢╨╡), ╤В╨╛ ╨▒╨╗╨╛╨║ ╨▒╤Г╨┤╨╡╤В ╨┐╤А╨╕╨╗╨╕╨┐╨░╤В╤М ╨┤╨╛ ╤В╨╛╨│╨╛, ╨║╨░╨║ ╨▓╨╡╤А╤Е╨╜╨╕╨╣ ╨║╤А╨░╨╣ ╨╛╨║╨╜╨░ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░ ╨┤╨╛╨╣╨┤╤С╤В ╨┤╨╛ ╨▓╨╡╤А╤Е╨╜╨╡╨│╨╛ ╨║╤А╨░╤П ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░. ╨Ь╨╛╨╢╨╡╤В ╨▒╤Л╤В╤М ╨╛╤В╤А╨╕╤Ж╨░╤В╨╡╨╗╤М╨╜╤Л╨╝ ╤З╨╕╤Б╨╗╨╛╨╝. ╨Я╤А╨╕╨╝╨╡╨╜╨╕╨╝, ╨╜╨░╨┐╤А╨╕╨╝╨╡╤А, ╨┐╤А╨╕ ╤Д╨╕╨║╤Б╨╕╤А╨╛╨▓╨░╨╜╨╜╨╛╨╝ ╤Б╨▓╨╡╤А╤Е╤Г ╨╝╨╡╨╜╤О */
-  bottom: 0;
-  margin: auto;
-  z-index: 101; }
+  position: fixed; }
+
+.stop1 {
+  position: relative; }
 
 .line1 {
   height: 1px;
@@ -290,6 +292,8 @@ nav {
     .cont_table .left_cell {
       border-right: 1px #cadae8 solid;
       width: 50%; }
+    .cont_table .right_cell {
+      width: 50%; }
 
   .table1, .table2 {
     display: table; }
@@ -297,7 +301,10 @@ nav {
       display: table-row; }
     .table1 li, .table2 li {
       display: table-cell;
-      vertical-align: middle; } }
+      vertical-align: middle; }
+
+  .logo_tit {
+    display: none; } }
 @media (max-width: 1250px) {
   .content {
     width: 100%; } }

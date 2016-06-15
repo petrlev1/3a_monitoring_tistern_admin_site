@@ -21,6 +21,8 @@ a{color: #6488D5; text-decoration: none; border-style: none; color: #2D547D;
 .logo {display: inline-block; padding: 0 10px; width: 70px;
 	img{width: 100%;}}
 
+.logo_tit {position:absolute; top:14px; margin-left:10px; color: #fff}
+
 .head_menu {position: relative; color: #fff; letter-spacing: 1px; margin: 4px 10px 4px 0;
 a {display: inline-block; font-size: 13px; text-decoration: none; color: #fff; margin: 5px 10px;
 		&:hover {color:#FFF3B8;}}}
@@ -46,20 +48,20 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	ul{display: table-row}
 	li{display: table-cell; position: relative; vertical-align: top;}
 	.left_cell {border-right: 1px #cadae8 solid; width:55%}
+	
 }
 
 .cont_left { position: relative; width:100%;}
 
-.cont_right { position: relative; width: 100%; overflow-y: auto; overflow-x: hidden; padding: 0 25px 20px 25px; }
+.cont_right { position: relative; width: 100%; padding: 0 25px 20px 25px;}
 
 .padding {padding:  0 25px;}
 
-.sticky {
-  position: fixed;
-  top: 0px;
-  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
-  bottom: 0; margin: auto;
-  z-index: 101;}
+.sticky { position: fixed; }
+
+.stop1 {
+  position: relative;
+}
 
 
 .line1 {height: 1px; background-color: #cadae8}
@@ -123,6 +125,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	ul{display: table-row}
 	li{display: table-cell; position: relative; vertical-align: top;}
 	.left_cell {border-right: 1px #cadae8 solid; width:50%}
+		.right_cell {width: 50%}
 }
 	
 	.table1 {display: table;
@@ -130,6 +133,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	li{display: table-cell; vertical-align: middle;}
 	
 }
+	.logo_tit {display: none}
 }
 
 
