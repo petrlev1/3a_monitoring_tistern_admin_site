@@ -293,7 +293,7 @@ nav {
       border-right: 1px #cadae8 solid;
       width: 50%; }
     .cont_table .right_cell {
-      width: 50%; }
+      width: 100%; }
 
   .table1, .table2 {
     display: table; }
