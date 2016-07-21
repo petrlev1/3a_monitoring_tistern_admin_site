@@ -17,7 +17,7 @@ a {
     color: #6488D5; }
 
 .content_all {
-  max-width: 1600px;
+  max-width: 1920px;
   left: 0;
   right: 0;
   margin: auto; }
@@ -69,7 +69,8 @@ h1 {
 
 h2 {
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 1px; }
 
 h4 {
   font-size: 21px;
@@ -144,15 +145,17 @@ nav {
   width: 100%; }
 
 .cont_right {
-  position: relative;
-  width: 100%;
-  padding: 0 25px 20px 25px; }
+  padding: 0 25px 20px 25px;
+  overflow: auto; }
 
 .padding {
   padding: 0 25px; }
 
 .sticky {
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: auto; }
 
 .stop1 {
   position: relative; }
@@ -173,12 +176,10 @@ nav {
     .table1 ul:hover, .table2 ul:hover {
       background-color: #E1EFFA;
       background-image: none; }
-    .table1 ul:hover .ic_block, .table2 ul:hover .ic_block {
-      display: block; }
   .table1 li, .table2 li {
     display: table-cell;
     position: relative;
-    padding: 10px 10px;
+    padding: 4px 10px;
     border: 1px #cadae8 solid;
     text-align: left;
     vertical-align: middle; }
@@ -215,6 +216,12 @@ nav {
   border-bottom: 5px #2A6BA2 solid;
   padding: 12px 15px; }
 
+.ic_block {
+  min-width: 85px; }
+
+.ic_block_small {
+  min-width: 60px; }
+
 .ic_all, .ic_edit, .ic_del, .ic_all_small, .ic_edit_small, .ic_del_small {
   display: block;
   width: 40px;
@@ -227,13 +234,6 @@ nav {
     border: 1px #cadae8 solid;
     background-color: white;
     transition: background-color 0.2s ease-in; }
-
-.ic_block {
-  min-width: 85px;
-  display: none; }
-
-.ic_block_small {
-  min-width: 60px; }
 
 .ic_edit {
   float: left;
@@ -305,6 +305,32 @@ nav {
 
   .logo_tit {
     display: none; } }
+.btn1, .btn1_lg {
+  position: relative;
+  color: #2A6BA2;
+  border-bottom: 1px #2A6BA2 dashed;
+  padding: 5px 5px 5px 31px;
+  border-radius: 3px; }
+  .btn1 span, .btn1_lg span {
+    position: absolute;
+    left: 5px; }
+  .btn1:hover, .btn1_lg:hover {
+    background-color: #2A6BA2;
+    color: #fff; }
+
+.btn1_lg {
+  font-size: 17px; }
+  .btn1_lg span {
+    font-size: 23px;
+    top: 0; }
+
+.btn-primary {
+  background-color: #fff;
+  color: #2A6BA2;
+  border-bottom: none; }
+  .btn-primary:hover {
+    border: none; }
+
 @media (max-width: 1250px) {
   .content {
     width: 100%; } }

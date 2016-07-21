@@ -10,7 +10,7 @@ a{color: #6488D5; text-decoration: none; border-style: none; color: #2D547D;
           box-shadow: $shadow;
 }
 
-.content_all {max-width: 1600px; left: 0; right: 0; margin: auto;}
+.content_all {max-width: 1920px; left: 0; right: 0; margin: auto;}
 
 .head { display: table; position: relative; background-color: #2D547D; text-align: left; width: 100%;
 	ul{display: table-row}
@@ -28,7 +28,7 @@ a {display: inline-block; font-size: 13px; text-decoration: none; color: #fff; m
 		&:hover {color:#FFF3B8;}}}
 
 h1 {font-size: 32px; margin: 0;}
-h2 { font-size: 18px; font-weight: bold}
+h2 { font-size: 18px; font-weight: bold; margin-bottom: 1px;}
 h4 {font-size: 21px; margin: 0;}
 .note_er {color: #FF543F}
 
@@ -53,11 +53,11 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 .cont_left { position: relative; width:100%;}
 
-.cont_right { position: relative; width: 100%; padding: 0 25px 20px 25px;}
+.cont_right { padding: 0 25px 20px 25px; overflow: auto; }
 
 .padding {padding:  0 25px;}
 
-.sticky { position: fixed; }
+.sticky { position: fixed; top: 0; bottom: 0; overflow: auto; }
 
 .stop1 {
   position: relative;
@@ -69,9 +69,8 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 .table1 {display: table; width: 100%; font-size: 16px; color: #333333; border-collapse: collapse;
 	ul{display: table-row; background: url(img/table1_row.png) bottom repeat-x;
 	&:hover {background-color: #E1EFFA; background-image: none;}
-		&:hover .ic_block {display: block}
 	}
-	li{display: table-cell; position: relative; padding:10px 10px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
+	li{display: table-cell; position: relative; padding:4px 10px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
 	.thead { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle;
 		li {padding: 17px 10px;}
 		&:hover{background-color: #fff;}
@@ -86,12 +85,11 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 .table_foot {border-left: 1px #cadae8 solid; border-right: 1px #cadae8 solid; border-bottom: 5px #2A6BA2 solid; padding: 12px 15px;}
 
+.ic_block {min-width: 85px; }
+.ic_block_small {min-width: 60px;}
+
 .ic_all { display: block; width: 40px; height: 40px; background-repeat: no-repeat; background-position: center; background-color: rgba(255, 255, 255, 0); transition: background-color 0.1s ease-in;
 	&:hover {border: 1px #cadae8 solid; background-color: rgba(255, 255, 255, 1); transition: background-color 0.2s ease-in;}}
-
-
-.ic_block {min-width: 85px; display: none}
-.ic_block_small {min-width: 60px;}
 
 .ic_edit {@extend .ic_all; float: left; background-image: url(img/icon_edit.svg); margin-right: 5px;}
 .ic_del {@extend .ic_all; float: right; background-image: url(img/icon_del.svg)}
@@ -135,6 +133,16 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 }
 	.logo_tit {display: none}
 }
+
+.btn1 {position: relative; color: #2A6BA2; border-bottom: 1px #2A6BA2 dashed; padding: 5px 5px 5px 31px; border-radius: 3px;
+	span{position:absolute; left: 5px;}
+	&:hover{background-color: #2A6BA2; color: #fff}}
+
+.btn1_lg {@extend .btn1; font-size: 17px;
+	span{font-size:23px; top: 0}}
+
+.btn-primary {background-color: #fff; color: #2A6BA2; border-bottom: none;
+	&:hover {border: none;}}
 
 
 
