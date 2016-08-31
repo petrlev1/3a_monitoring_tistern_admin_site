@@ -10,8 +10,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="js/bootstrap.min.js"></script>
 
-<link href="css/style.css" rel="stylesheet" type="text/css">
-        
+<link href="css/style.css" rel="stylesheet" type="text/css">    
         
 	</head>
 
@@ -148,6 +147,118 @@
 </div>
 
 <!-- /Modal - del_org -->
+
+        <!-- Modal - add_avto -->
+
+<div id="add_avto" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title">Добавление автомобиля</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+         <div class="formscont">
+            <div>
+            <p>Гос.номер</p>
+            <input type="text" class="form1">
+            </div>
+        </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-success btn-lg" style="float:left;">Сохранить</a><button type="button" class="btn-lg btn-default" data-dismiss="modal">Отменить</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- /Modal - add_avto -->
+
+
+        <!-- Modal - edit_avto -->
+
+<div id="edit_avto" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title">Автомобиль - ак4264 68 - ООО АвтоАльянс</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+         <div class="formscont">
+            <div>
+            <p>Гос.номер</p>
+            <input type="text" class="form1" value="ак4264 68">
+            </div>
+        </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-success btn-lg" style="float:left;">Сохранить</a><button type="button" class="btn-lg btn-default" data-dismiss="modal">Отменить</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- /Modal - edit_avto -->
+
+        <!-- Modal - del_avto -->
+
+<div id="del_avto" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <h4 class="modal-title note_er">Удаление автомобиля</h4>
+
+      </div>
+      <div class="modal-body">
+
+        <!-- Modal content-->
+
+        <div class="formscont">
+            <h1>ак4264 68 - ООО АвтоАльянс</h1>
+                </div>
+
+        <!-- /Modal content-->
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" class="btn-danger btn-lg" style="float:left;">Удалить</a><button type="button" class="btn-lg btn-default" data-dismiss="modal">Отменить</button>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- /Modal - del_avto -->
+
 
         <!-- Modal - add_controllers -->
 
@@ -470,10 +581,10 @@
             <li class="left_cell">
 
                     <div class="cont_left" id="article1">
-
                         <div class="table1">
                 <ul class="thead">
-                    <li style="width:1px">№</li><li><h1>Организация</h1></li><li  style="width:1px">Код<br>организации</li><li style="text-align:center; width:1px;">Ред.</li>
+                    <li style="width:1px">№</li><li><h1>Организация</h1><input type="text" class="form1_search" placeholder="Поиск организаций"></li>
+                    <li  style="width:1px">Код<br>организации</li><li style="text-align:center; width:1px;">Ред.</li>
                 </ul>
                 <ul>
                     <li>01</li><li>ООО «Альб-Фрейт-Компани»</li><li>10264431</li><li><div class="ic_block"><a href="" data-toggle="modal" data-target="#edit_org" class="ic_edit"></a><a href="" data-toggle="modal" data-target="#del_org" class="ic_del"></a></div></li>
@@ -610,6 +721,23 @@
                         <h1 style="color:#2A6BA2; margin:23px 0 24px 0;">ООО «Альб-Фрейт-Компани»</h1>
                         <div class="line1"></div>
 
+                       <div style="position:relative; height:42px"><h2 style="color:#2A6BA2; padding-top:10px">Автомобили</h2>
+                       <input type="text" placeholder="Поиск автомобилей" class="form1_right"></div>
+
+                            <div class="table2">
+                <ul class="thead">
+                    <li>№</li><li>Гос.номер</li><li style="text-align:center; width:1px;">Ред.</li>
+                </ul>
+                <ul>
+                    <li>001</li><li>ав0318 07</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small"></a></div></li>
+                </ul>
+                
+            </div>
+
+           <div class="table_foot"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#add_avto">Добавить автомобиль</a></div>
+
+
+
                         <h2 style="color:#2A6BA2">Контроллеры</h2>
 
                             <div class="table2">
@@ -628,33 +756,6 @@
                                  <ul>
                     <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
                 </ul>
-                                 <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                 <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                 <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                 <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>
-                                 <ul>
-                    <li>001</li><li>ав0318 07</li><li>000000000038474</li><li>013226002533731</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
-                </ul>  
                 
             </div>
 
