@@ -86,6 +86,15 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
 }
 
+.table_data_askp {@extend .table1; font-size: 16px; width: 100%;
+	li {padding: 6px 6px; vertical-align: top}
+	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
+}
+
+.controllers { 
+    label { position: relative; display: block; margin: 3px 0; padding: 0 0 0 20px; font-size: 14px; font-weight: 100}
+    input { position: absolute; margin: 3px; left: 0;}}
+
 .table_foot {border-left: 1px #cadae8 solid; border-right: 1px #cadae8 solid; border-bottom: 5px #2A6BA2 solid; padding: 12px 15px;}
 
 .ic_all { display: block; width: 40px; height: 40px; background-repeat: no-repeat; background-position: center; background-color: rgba(255, 255, 255, 0); transition: background-color 0.1s ease-in;
@@ -104,6 +113,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 .ic_del_small {@extend .ic_all_small; float: right; background-image: url(img/icon_del.svg)}
 
 
+.checkbox_med {width: 18px; height: 18px;}
 .checkbox_big {width: 30px; height: 30px;}
 
 .formscont {

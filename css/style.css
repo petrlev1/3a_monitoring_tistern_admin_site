@@ -164,39 +164,39 @@ nav {
   height: 1px;
   background-color: #cadae8; }
 
-.table1, .table2 {
+.table1, .table2, .table_data_askp {
   display: table;
   width: 100%;
   font-size: 16px;
   color: #333333;
   border-collapse: collapse; }
-  .table1 ul, .table2 ul {
+  .table1 ul, .table2 ul, .table_data_askp ul {
     display: table-row;
     background: url(img/table1_row.png) bottom repeat-x; }
-    .table1 ul:hover, .table2 ul:hover {
+    .table1 ul:hover, .table2 ul:hover, .table_data_askp ul:hover {
       background-color: #E1EFFA;
       background-image: none; }
-    .table1 ul:hover .ic_block, .table2 ul:hover .ic_block {
+    .table1 ul:hover .ic_block, .table2 ul:hover .ic_block, .table_data_askp ul:hover .ic_block {
       display: block; }
-  .table1 li, .table2 li {
+  .table1 li, .table2 li, .table_data_askp li {
     display: table-cell;
     position: relative;
     padding: 10px 10px;
     border: 1px #cadae8 solid;
     text-align: left;
     vertical-align: middle; }
-  .table1 .thead, .table2 .thead {
+  .table1 .thead, .table2 .thead, .table_data_askp .thead {
     font-size: 17px;
     font-weight: 100;
     color: #2A6BA2;
     background-color: #fff;
     background-image: none;
     vertical-align: middle; }
-    .table1 .thead li, .table2 .thead li {
+    .table1 .thead li, .table2 .thead li, .table_data_askp .thead li {
       padding: 17px 10px; }
-    .table1 .thead:hover, .table2 .thead:hover {
+    .table1 .thead:hover, .table2 .thead:hover, .table_data_askp .thead:hover {
       background-color: #fff; }
-  .table1 .table_act, .table2 .table_act {
+  .table1 .table_act, .table2 .table_act, .table_data_askp .table_act {
     font-weight: bold;
     background-color: #E1EFFA;
     background-image: none; }
@@ -211,6 +211,30 @@ nav {
     color: #fff;
     background-color: #2A6BA2;
     padding: 5px 5px; }
+
+.table_data_askp {
+  font-size: 16px;
+  width: 100%; }
+  .table_data_askp li {
+    padding: 6px 6px;
+    vertical-align: top; }
+  .table_data_askp .thead li {
+    font-size: 13px;
+    color: #fff;
+    background-color: #2A6BA2;
+    padding: 5px 5px; }
+
+.controllers label {
+  position: relative;
+  display: block;
+  margin: 3px 0;
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  font-weight: 100; }
+.controllers input {
+  position: absolute;
+  margin: 3px;
+  left: 0; }
 
 .table_foot {
   border-left: 1px #cadae8 solid;
@@ -260,6 +284,10 @@ nav {
 .ic_del_small {
   float: right;
   background-image: url(img/icon_del.svg); }
+
+.checkbox_med {
+  width: 18px;
+  height: 18px; }
 
 .checkbox_big {
   width: 30px;
@@ -332,11 +360,11 @@ nav {
     .cont_table .right_cell {
       width: 100%; }
 
-  .table1, .table2 {
+  .table1, .table2, .table_data_askp {
     display: table; }
-    .table1 ul, .table2 ul {
+    .table1 ul, .table2 ul, .table_data_askp ul {
       display: table-row; }
-    .table1 li, .table2 li {
+    .table1 li, .table2 li, .table_data_askp li {
       display: table-cell;
       vertical-align: middle; }
 
@@ -380,14 +408,14 @@ nav {
     bottom: auto;
     margin: auto; }
 
-  .table1, .table2 {
+  .table1, .table2, .table_data_askp {
     display: table;
     width: 100%; }
-    .table1 ul, .table2 ul {
+    .table1 ul, .table2 ul, .table_data_askp ul {
       display: table-row; }
-    .table1 li, .table2 li {
+    .table1 li, .table2 li, .table_data_askp li {
       display: table-cell; }
-    .table1 .thead li, .table2 .thead li {
+    .table1 .thead li, .table2 .thead li, .table_data_askp .thead li {
       font-size: 17px;
       font-weight: 100;
       color: #2A6BA2;
@@ -395,7 +423,7 @@ nav {
       background-image: none;
       vertical-align: middle;
       padding: 17px 10px; }
-    .table1 .table_act, .table2 .table_act {
+    .table1 .table_act, .table2 .table_act, .table_data_askp .table_act {
       font-weight: bold;
       background-color: #E1EFFA;
       background-image: none; }
