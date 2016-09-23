@@ -215,26 +215,42 @@ nav {
 .table_data_askp {
   font-size: 16px;
   width: 100%; }
+  .table_data_askp ul {
+    overflow: hidden;
+    transition: all .3s ease; }
+    .table_data_askp ul .contchek {
+      display: none; }
+    .table_data_askp ul .contchek:checked ~ .controllers {
+      max-height: 1000px;
+      margin: 6px 0 0 0; }
   .table_data_askp li {
     padding: 6px 6px;
     vertical-align: top; }
-  .table_data_askp .thead li {
-    font-size: 13px;
-    color: #fff;
-    background-color: #2A6BA2;
-    padding: 5px 5px; }
+  .table_data_askp label {
+    display: block;
+    padding: 3px 0 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer; }
 
-.controllers label {
-  position: relative;
+.controllers {
   display: block;
-  margin: 3px 0;
-  padding: 0 0 0 20px;
-  font-size: 14px;
-  font-weight: 100; }
-.controllers input {
-  position: absolute;
-  margin: 3px;
-  left: 0; }
+  overflow: hidden;
+  max-height: 0;
+  margin: 0;
+  transition: all .3s ease; }
+  .controllers label {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 2px 0 2px 21px;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: default; }
+  .controllers input {
+    position: absolute;
+    margin: 3px;
+    left: 0; }
 
 .table_foot {
   border-left: 1px #cadae8 solid;

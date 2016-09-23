@@ -87,12 +87,15 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 }
 
 .table_data_askp {@extend .table1; font-size: 16px; width: 100%;
+    ul { overflow: hidden; transition: all .3s ease;
+        .contchek {display: none}
+        .contchek:checked ~ .controllers { max-height: 1000px; margin: 6px 0 0 0;}}
 	li {padding: 6px 6px; vertical-align: top}
-	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
+    label { display: block; padding: 3px 0 0 0; font-size: 15px; font-weight: bold; cursor: pointer}
 }
 
-.controllers { 
-    label { position: relative; display: block; margin: 3px 0; padding: 0 0 0 20px; font-size: 14px; font-weight: 100}
+.controllers { display: block; overflow: hidden; max-height: 0; margin: 0; transition: all .3s ease;
+    label { position: relative; display: block; margin: 0; padding: 2px 0 2px 21px; font-size: 14px; font-weight: 100; cursor: default; }
     input { position: absolute; margin: 3px; left: 0;}}
 
 .table_foot {border-left: 1px #cadae8 solid; border-right: 1px #cadae8 solid; border-bottom: 5px #2A6BA2 solid; padding: 12px 15px;}
