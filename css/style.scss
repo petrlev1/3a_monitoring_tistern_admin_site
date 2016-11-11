@@ -1,4 +1,4 @@
-body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #000; font-size: 14px; background-color: #F2F2F2; }
+body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #000; font-size: 14px; background-color: #F2F2F2; overflow-x: hidden }
 
 a{color: #6488D5; text-decoration: none; border-style: none; color: #2D547D;
     &:hover {text-decoration: none; color: #6488D5;}}
@@ -10,7 +10,7 @@ a{color: #6488D5; text-decoration: none; border-style: none; color: #2D547D;
           box-shadow: $shadow;
 }
 
-.content_all {max-width: 1600px; left: 0; right: 0; margin: auto;}
+.content_all {max-width: 1800px; left: 0; right: 0; margin: auto;}
 
 .head { display: table; position: relative; background-color: #2D547D; text-align: left; width: 100%;
 	ul{display: table-row}
@@ -32,7 +32,7 @@ h2 { font-size: 18px; font-weight: bold}
 h4 {font-size: 21px; margin: 0;}
 .note_er {color: #FF543F}
 
-.note1 {font-size: 14px}
+.note1 {font-size: 12px}
 
 nav { margin: 30px 0; clear: both; text-align: center; font-size: 19px;
 background-image: url(img/menu_lines.png); background-position: center; background-repeat: repeat-x;
@@ -44,7 +44,9 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.menu_lines2 { width: 1px; height: 32px; padding: 0 0; border-right: 1px #c4ccd5 solid}
 }
 
-.content {position: relative; width: 90%; left: 0; right: 0; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3); background-color: #fff; padding: 0 0 20px 0; }
+.content {position: relative; width: 90%; left: 0; right: 0; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.3); background-color: #fff; padding: 10px 20px; }
+
+.container-fluid { margin: 0; padding: 0}
 
 .cont_table {display: table; width: 100%;
 	ul{display: table-row}
@@ -53,9 +55,12 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	
 }
 
+.col-lg-4 {padding: 0 5px}
+
+
 .cont_left { position: relative; width:100%;}
 
-.cont_right { position: relative; width: 100%; padding: 0 25px 20px 25px;}
+.cont_right { position: relative; width: 100%; padding: 0 20px }
 
 .padding {padding:  0 25px;}
 
@@ -73,16 +78,21 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	&:hover {background-color: #E1EFFA; background-image: none;}
 		&:hover .ic_block {display: block}
 	}
-	li{display: table-cell; position: relative; padding:10px 10px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
-	.thead { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle;
-		li {padding: 17px 10px;}
-		&:hover{background-color: #fff;}
+	li{display: table-cell; position: relative; padding: 6px; border: 1px #cadae8 solid; text-align: left; vertical-align: middle;}
+	.thead { font-weight: 100; background-image: none; vertical-align: middle;
+		li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
+	
 	}
 	.table_act {font-weight: bold; background-color: #E1EFFA; background-image: none;}
 }
 
 .table2 {@extend .table1; font-size: 13px; width: 100%;
-	li {padding: 6px 6px;}
+	li {padding: 3px 6px;}
+	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 6px 6px;}
+}
+
+.table3 {@extend .table1; font-size: 12px; width: 100%;
+	li {padding: 3px 6px;}
 	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
 }
 
@@ -127,10 +137,11 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 .form1 {font-size: 17px; padding: 8px 10px; width: 100%; border: 1px #cadae8 solid;}
 
 .form1_search {position: absolute; font-size: 21px; color: #333333; height: 50px; width: 19%; top: 15px; right: 10px; margin: auto; padding: 5px 10px 5px 120px; border: 1px #ccc solid; transition: all 0.3s ease-in; background: #F5F5F5 url(img/search.svg) left 5px center no-repeat; border-radius: 3px;
-	&:focus {outline: none; width: 97%; height: 60px; padding: 5px 10px 5px 55px; background-color: #fff; border-width: 3px; }}
+	&:focus {outline: none; width: 97%; height: 60px; padding: 5px 10px 5px 55px; background-color: #fff; border-width: 1px; }}
 
-.form1_right {@extend .form1_search; font-size: 18px; height: 38px; right: 0; top: 0; margin: 0; background-size: contain;
-	&:focus{width: 100%; height: 38px; padding: 0 10px 2px 50px;}}
+.form1_right {@extend .form1_search; font-size: 16px; width: 80px; height: 38px; right: 0; top: 0; margin: 0; background-size: contain; padding: 0 0 0 80px;
+	&:focus {width: 100%; height: 38px; padding: 0 10px 2px 50px; }
+}
 
 
 
@@ -141,13 +152,14 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 
 @media (max-width: 1350px) {
-	
-	.cont_table {display: table; width: 100%;
+    
+    .cont_table {display: table; width: 100%;
 	ul{display: table-row}
 	li{display: table-cell; position: relative; vertical-align: top;}
 	.left_cell {border-right: 1px #cadae8 solid; width:50%}
 		.right_cell {width: 100%}
 }
+	
 	
 	.table1 {display: table;
 	ul{display: table-row;}
@@ -177,18 +189,12 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 
 @media (max-width: 1080px) {
-	
-
-	
-	.cont_table {display: table; width: 100%;
+    
+    .cont_table {display: table; width: 100%;
 	ul{display: table-row}
 	li{display: block;}
 	.left_cell {border-right: 0 #fff solid; width: 100%;}
 	}
-	
-	.cont_left { position: relative; width:100%; padding: 0 25px;}
-
-.cont_right { position: relative; width: 100%; overflow-y: hidden; overflow-x: hidden; padding: 0 25px;}
 	
 	.sticky {
   position: relative;
@@ -200,7 +206,6 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.table1 {display: table; width: 100%;
 	ul{display: table-row;}
 	li{display: table-cell;}
-	.thead li { font-size: 17px; font-weight: 100; color: #2A6BA2; background-color: #fff; background-image: none; vertical-align: middle; padding: 17px 10px}
 	.table_act {font-weight: bold; background-color: #E1EFFA; background-image: none;}
 }
 	
