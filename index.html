@@ -580,10 +580,10 @@
 			<div class="cont_left" id="article1">
                        
                        <h2 style="color:#2A6BA2">Организация</h2>
-				<div class="note1" style="position: absolute; top: 22px; text-align: left; width: 100%">Всего организаций: <strong>109</strong></div>
+				<div class="note1" style="position: absolute; top: 52px; right: 0; text-align: right;">Всего организаций: <strong>109</strong></div>
               <input type="text" placeholder="Поиск организаций" class="form1_right">
-
-              <div class="table3" style="margin-top: 24px">
+				<div style="margin-top: 21px;"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#add_controllers">Добавить организацию</a></div>
+              <div class="table3" style="margin-top: 5px">
                 <ul class="thead">
                     <li>№</li><li>Организация</li><li>Код организации</li><li style="text-align:center; width:1px;">Ред.</li>
                 </ul>
@@ -591,7 +591,29 @@
                     <li>01</li><li>ООО «Название компании»</li><li>01010101</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
                 </ul>
                 <ul>
-                    <li>01</li><li>ООО «Название компании»</li><li>01010101</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
+                    <li>01</li><li><strong>ООО «Название компании»</strong>
+                    <div style="position: absolute; top: 27px; right: 6px; width: 100%"><input type="text" placeholder="Поиск автомобилей" class="formSSmall"></div>
+					<div style="margin: 11px 0 7px 0"><a href="" class="btn-sm btn-primary" data-toggle="modal" data-target="#add_avto">Добавить автомобиль</a></div>
+					
+                    <div class="tableIn">
+                <ul class="thead">
+                    <li>№</li><li>Гос.номер</li><li style="text-align:center; width:1px;"></li>
+                </ul>
+                <ul>
+                    <li>001</li><li>аа0000 11</li><li><div class="ic_block_small2"><a href="" class="ic_edit_small2" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small2"></a></div></li>
+                </ul>
+                <ul>
+                    <li>001</li><li>аа0000 11</li><li><div class="ic_block_small2"><a href="" class="ic_edit_small2" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small2"></a></div></li>
+                </ul>
+                <ul>
+                    <li>001</li><li>аа0000 11</li><li><div class="ic_block_small2"><a href="" class="ic_edit_small2" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small2"></a></div></li>
+                </ul>
+                <ul>
+                    <li>001</li><li>аа0000 11</li><li><div class="ic_block_small2"><a href="" class="ic_edit_small2" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small2"></a></div></li>
+                </ul>
+                
+            </div>
+                    </li><li>01010101</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small2"></a></div></li>
                 </ul>
                 <ul>
                     <li>01</li><li>ООО «Название компании»</li><li>01010101</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_controllers"></a><a href="" data-toggle="modal" data-target="#del_controllers" class="ic_del_small"></a></div></li>
@@ -612,8 +634,8 @@
 				
 				<div class="col-lg-4">
 				<h2 style="color:#2A6BA2">Контроллеры</h2>
-
-                            <div class="table3" style="margin-top: 24px">
+					<div style="margin: 21px 0 6px 0;"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#add_controllers">Добавить контроллер</a></div>
+                            <div class="table3">
                 <ul class="thead">
                     <li>№</li><li>Гос.номер</li><li>IMEI-АСКП</li><li>IMEI-ЕГАИС</li><li style="text-align:center; width:1px;">Ред.</li>
                 </ul>
@@ -637,8 +659,8 @@
 				
 				<div class="col-lg-4">
 				<h2 style="color:#2A6BA2">Счетчики - аа0000 11</h2>
-
-                            <div class="table3" style="margin-top: 24px">
+<div style="margin: 21px 0 6px 0;"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#add_counter">Добавить счетчик</a></div>
+                            <div class="table3">
                 <ul class="thead">
                     <li>№</li><li>Режим/Номер точки</li><li>№ счетчика</li><li>Дата установки</li><li style="text-align:center; width:1px;">Ред.</li>
                 </ul>
@@ -664,26 +686,6 @@
 				</div>
                    </div>
    
-
-                   <div class="cont_right" id="aside1">
-
-                       <div style="position:relative; height:42px"><h2 style="color:#2A6BA2; padding-top:10px">Автомобили</h2>
-                       <input type="text" placeholder="Поиск автомобилей" class="form1_right"></div>
-
-                            <div class="table2">
-                <ul class="thead">
-                    <li>№</li><li>Гос.номер</li><li style="text-align:center; width:1px;">Ред.</li>
-                </ul>
-                <ul>
-                    <li>001</li><li>аа0000 11</li><li><div class="ic_block_small"><a href="" class="ic_edit_small" data-toggle="modal" data-target="#edit_avto"></a><a href="" data-toggle="modal" data-target="#del_avto" class="ic_del_small"></a></div></li>
-                </ul>
-                
-            </div>
-
-           <div class="table_foot"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#add_avto">Добавить автомобиль</a></div>
-
-
-                            </div>
                       
                     </div>
                 

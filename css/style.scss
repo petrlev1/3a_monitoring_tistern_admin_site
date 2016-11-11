@@ -96,6 +96,11 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
 }
 
+.tableIn {@extend .table1; font-size: 11px; width: 100%; margin: 5px 0 0 0;
+	li {padding: 3px 6px; border: 0;}
+	.thead li {font-size: 12px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
+}
+
 .table_data_askp {@extend .table1; font-size: 16px; width: 100%;
     ul { overflow: hidden; transition: all .3s ease;
         .contchek {display: none}
@@ -116,6 +121,7 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 .ic_block {min-width: 85px; display: block}
 .ic_block_small {min-width: 60px;}
+.ic_block_small2 {min-width: 50px;}
 
 .ic_edit {@extend .ic_all; float: left; background-image: url(img/icon_edit.svg); margin-right: 5px;}
 .ic_del {@extend .ic_all; float: right; background-image: url(img/icon_del.svg)}
@@ -124,6 +130,9 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 
 .ic_edit_small {@extend .ic_all_small; float: left; background-image: url(img/icon_edit.svg); margin-right: 5px;}
 .ic_del_small {@extend .ic_all_small; float: right; background-image: url(img/icon_del.svg)}
+
+.ic_edit_small2 {@extend .ic_all_small; float: left; width: 20px; height: 20px; background-image: url(img/icon_edit.svg); margin-right: 5px;}
+.ic_del_small2 {@extend .ic_all_small; float: right; width: 20px; height: 20px; background-image: url(img/icon_del.svg)}
 
 
 .checkbox_med {width: 18px; height: 18px;}
@@ -143,8 +152,23 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	&:focus {width: 100%; height: 38px; padding: 0 10px 2px 50px; }
 }
 
+.formSSmall {@extend .form1_search; font-size: 16px; width: 30px; height: 25px; right: 0; top: 0; margin: 0; background-size: contain; padding: 0 0 0 35px;
+	&:focus {width: 96%; height: 25px; padding: 0 10px 2px 35px; }
+}
 
 
+
+
+
+
+@media (max-width: 1650px) {
+    
+    .table3 { font-size: 11px; width: 100%;;
+	li {padding: 3px; }
+	.thead li {font-size: 11px; color: #fff; background-color: #2A6BA2; padding: 3px;}
+}
+    
+}
 
 
 
@@ -166,6 +190,14 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	li{display: table-cell; vertical-align: middle;}
 	
 }
+    
+    .table3 { font-size: 10px; width: 100%;;
+	li {padding: 2px; }
+	.thead li {font-size: 10px; color: #fff; background-color: #2A6BA2; padding: 2px;}
+}
+    
+    
+    
 	.logo_tit {display: none}
 	
 	.form1_search {width: 50px; padding: 5px 10px 5px 40px;}
@@ -179,6 +211,19 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 @media (max-width: 1250px) {
 	
 	.content { width: 100%; }
+	
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+	
+	.table3 { font-size: 12px; width: 100%;
+	li {padding: 3px 6px;}
+	.thead li {font-size: 13px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
+}
 	
 }
     
