@@ -101,6 +101,8 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.thead li {font-size: 12px; color: #fff; background-color: #2A6BA2; padding: 5px 5px;}
 }
 
+.blockAuto {position: absolute; top: 27px; right: 6px; width: 100%}
+
 .table_data_askp {@extend .table1; font-size: 16px; width: 100%;
     ul { overflow: hidden; transition: all .3s ease;
         .contchek {display: none}
@@ -152,8 +154,8 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	&:focus {width: 100%; height: 38px; padding: 0 10px 2px 50px; }
 }
 
-.formSSmall {@extend .form1_search; font-size: 16px; width: 30px; height: 25px; right: 0; top: 0; margin: 0; background-size: contain; padding: 0 0 0 35px;
-	&:focus {width: 96%; height: 25px; padding: 0 10px 2px 35px; }
+.formSSmall {@extend .form1_search; position: absolute; font-size: 16px; width: 30px; height: 27px; right: 0; top: -4px; margin: 0; background-size: contain; padding: 0 0 0 35px;
+	&:focus {width: 96%; height: 27px; padding: 0 10px 2px 35px; }
 }
 
 
@@ -244,7 +246,6 @@ background-image: url(img/menu_lines.png); background-position: center; backgrou
 	.sticky {
   position: relative;
   top: auto;
-  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
   bottom: auto; margin: auto;}
 	
 	
